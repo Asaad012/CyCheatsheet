@@ -5,6 +5,12 @@ robots.txt
 .htaccess
 .DS_Store
 ```
+# SQLi:
+Check this link: https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
+```
+admin' --
+
+```
 # Sqlmap commands:
 ```
 ```
