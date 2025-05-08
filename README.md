@@ -1,4 +1,29 @@
 # CyCheatsheet
+# Useful Linux Commands:
+### Find file name/type location
+To find a file name location by just knowing **the file extention**
+```
+find . -type f -iname "*.pcap"
+```
+To find a file name location by just knowing **the name not the extention** 
+```
+find . -type f -iname "yourFileName"
+```
+To find a file name location by just knowing **part of the name** of the file
+```
+find . -type f -iname "*partOfTheFileName*"
+```
+### grep a location text you know
+To grep or find a text or string from a specefic file
+```
+grep "whatever text you want" filename
+```
+To grep or find a text or string from multiple files 
+```
+grep -r "whatever text" /target/directory
+```
+**NOTE:** use ```-i``` switch to avoid upper/lower case issues
+
 # Tools:
 * sqlmap ----> perform automated SQL injection
 * ffuf  -----> fuzzing the url to find hidden files
