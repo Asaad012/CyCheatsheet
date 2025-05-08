@@ -1,7 +1,9 @@
 All forensics tools and links
 
 ##Images
-### Tools:
+### Metadata Tools:
 * exiftool
 * exif
 * identify
+### Stegnography Tools:
+* zsteg
