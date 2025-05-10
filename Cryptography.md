@@ -7,7 +7,7 @@ hash-identifier
 ```
 hashcat -m 1400 -a 0 -o cracked.txt hash.txt /usr/share/wordlists/rockyou.txt
 ```
-**Note: **you have to change -m based on what type of hash it is and here is a **useful list of hash modes for hashcat:**
+**Note:** you have to change -m based on what type of hash it is and here is a **useful list of hash modes for hashcat:**
 * -m 0: MD5
 * -m 100: SHA-1
 * -m 200: MySQL323
