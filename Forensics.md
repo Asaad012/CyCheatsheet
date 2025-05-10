@@ -16,7 +16,7 @@ All forensics tools and links
 ## Image Disk
 When you got an image disk this means it may have all the data even the removed data so for this we will use library that is called **The Sleuth Kit** which has useful tools to recover them
 
-To show partition layout inside a disk image, this will show you the partitions and from there you can take the offset and use it later for your recovering process
+**mmls** To show partition layout inside a disk image, this will show you the partitions and from there you can take the offset and use it later for your recovering process
 ```
 mmls disk.flag.img
 ```
@@ -28,6 +28,10 @@ example result:
 002:  000:000   0000002048   0000206847   0000204800   Linux (0x83)         ---------> Usually here where you have to look anytimt you see (Linux 0x83)
 003:  000:001   0000206848   0000360447   0000153600   Linux Swap / Solaris x86 (0x82)
 004:  000:002   0000360448   0000614399   0000253952   Linux (0x83)         ---------> Or here, note: offset here is 360448
+```
+Similar tool to mmls is **fdisk**:
+```
+fdisk -l filename
 ```
 To list files and folders even the deleted ones: (-r is to list recursively) (-o is the offset of the partition we want)
 ```
