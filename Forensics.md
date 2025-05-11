@@ -1,6 +1,6 @@
 All forensics tools and links
 
-## Images
+## Images/PNG/PENG
 ### Metadata Tools:
 * exiftool
 * exif
@@ -58,3 +58,9 @@ Other useful tools from the sleuth kit:
 stat	 ----> Show metadata info for a file (inode details)
 fsstat ----> Show file system details (type, size, etc.)
 ```
+## Bitlcoker 
+To extract the bitlocker hash from the image disk use **bitlocker2john** and this could help to crack the password
+```
+bitlocker2john -i bitlocker-1.dd > bitlocker_hash.txt
+```
+**Note:** you may have to check the output result bc recovery keys also maybe included and we dont want them we are intrested mostly in user password hash
